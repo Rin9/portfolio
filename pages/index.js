@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>J's World</title>
+        <title>J&apos;s World</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
