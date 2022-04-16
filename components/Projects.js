@@ -23,7 +23,7 @@ const Projects = () => {
     <section className={`flex flex-col bg-white py-20 text-3xl md:text-4xl`}>
       <div className="container mx-auto px-11">
         <p className="leading-tight max-w-5xl mx-auto text-4xl tracking-tight">
-          <strong>I'm a self-taught front-end developer.</strong>
+          <strong>I&apos;m a self-taught front-end developer.</strong>
         </p>
       </div>
       <div className="container mx-auto px-11 text-center mt-28">
