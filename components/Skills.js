@@ -36,8 +36,7 @@ const Skills = () => {
               opacity: opacityForBlock(progress, 0),
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur, atque.
+            I&apos;m a self-taught front-end developer.
           </div>
           <span
             className={`${s.skillText} inline-block after:content-["_"]`}
@@ -45,8 +44,7 @@ const Skills = () => {
               opacity: opacityForBlock(progress, 1),
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, blanditiis!
+            I believe that a good web app can make users be joyful of using it.
           </span>
           <span
             className={`${s.skillText} inline-block`}
@@ -54,8 +52,7 @@ const Skills = () => {
               opacity: opacityForBlock(progress, 2),
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            quidem.
+            My goal is to the part of that joy.
           </span>
         </div>
       </div>
