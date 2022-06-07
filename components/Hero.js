@@ -11,9 +11,12 @@ const Hero = () => {
   const { scrollY } = useContext(ScrollContext);
   let progress = 0;
   const { current: elContainer } = refContainer;
+
+  // console.log("scrollY", scrollY);
   if (elContainer) {
     progress = Math.min(1, scrollY / elContainer.clientHeight);
   }
+  // console.log("progress", progress);
 
   const handleImageLoaded = useCallback(() => {
     setImageLoaded(true);

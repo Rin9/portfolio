@@ -11,6 +11,7 @@ import Image from "next/image";
 import butterBuyImage from "/assets/projects/project-better-buy.png";
 import neatBlogImage from "/assets/projects/neat-blog-1.png";
 import newFashionImage from "/assets/projects/new-fashion-1.png";
+import uberEats from "/assets/projects/uberEatsClone.png";
 
 const Works = () => {
   return (
@@ -102,6 +103,37 @@ const Works = () => {
                     width={1240}
                     height={1620}
                     alt="new fashion"
+                  />
+                </WorkRight>
+              </WorkContainer>
+            );
+          }}
+        ></Tile>
+        <Tile
+          page={3}
+          renderContent={({ progress }) => {
+            return (
+              <WorkContainer>
+                <WorkLeft progress={progress}>
+                  <div>I built</div>
+                  <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                    <WorkLink href="https://uber-eats-clone-chi.vercel.app/">
+                      Uber Eats Clone
+                    </WorkLink>
+                  </div>
+                  <div className="text-2xl md:text-3xl font-semibold tracking-tight pt-5">
+                    <WorkLink href="https://github.com/Rin9/uber_eats_clone">
+                      Github
+                    </WorkLink>
+                  </div>
+                </WorkLeft>
+                <WorkRight progress={progress}>
+                  <Image
+                    src={uberEats}
+                    layout="responsive"
+                    width={1620}
+                    height={1240}
+                    alt="uber eats clone"
                   />
                 </WorkRight>
               </WorkContainer>
