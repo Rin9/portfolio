@@ -15,7 +15,7 @@ import uberEats from "/assets/projects/uberEatsClone.png";
 
 const Works = () => {
   return (
-    <TileWrapper numOfPages={3}>
+    <TileWrapper numOfPages={4}>
       <TileBackground>
         <WorkBackground></WorkBackground>
       </TileBackground>
