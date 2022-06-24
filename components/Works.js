@@ -12,10 +12,11 @@ import butterBuyImage from "/assets/projects/project-better-buy.png";
 import neatBlogImage from "/assets/projects/neat-blog-1.png";
 import newFashionImage from "/assets/projects/new-fashion-1.png";
 import uberEats from "/assets/projects/uberEatsClone.png";
+import redditClone from "/assets/projects/redditClone.png";
 
 const Works = () => {
   return (
-    <TileWrapper numOfPages={4}>
+    <TileWrapper numOfPages={5}>
       <TileBackground>
         <WorkBackground></WorkBackground>
       </TileBackground>
@@ -134,6 +135,37 @@ const Works = () => {
                     width={1620}
                     height={1240}
                     alt="uber eats clone"
+                  />
+                </WorkRight>
+              </WorkContainer>
+            );
+          }}
+        ></Tile>
+        <Tile
+          page={4}
+          renderContent={({ progress }) => {
+            return (
+              <WorkContainer>
+                <WorkLeft progress={progress}>
+                  <div>I built</div>
+                  <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                    <WorkLink href="https://https://reddit-clone-phi-orcin.vercel.app/">
+                      Reddit Clone
+                    </WorkLink>
+                  </div>
+                  <div className="text-2xl md:text-3xl font-semibold tracking-tight pt-5">
+                    <WorkLink href="https://github.com/Rin9/reddit_clone">
+                      Github
+                    </WorkLink>
+                  </div>
+                </WorkLeft>
+                <WorkRight progress={progress}>
+                  <Image
+                    src={redditClone}
+                    layout="responsive"
+                    width={1620}
+                    height={1240}
+                    alt="reddit clone"
                   />
                 </WorkRight>
               </WorkContainer>
