@@ -149,7 +149,7 @@ const Works = () => {
                 <WorkLeft progress={progress}>
                   <div>I built</div>
                   <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                    <WorkLink href="https://https://reddit-clone-phi-orcin.vercel.app/">
+                    <WorkLink href="https://reddit-clone-phi-orcin.vercel.app/">
                       Reddit Clone
                     </WorkLink>
                   </div>
