@@ -13,6 +13,7 @@ import neatBlogImage from "/assets/projects/neat-blog-1.png";
 import newFashionImage from "/assets/projects/new-fashion-1.png";
 import uberEats from "/assets/projects/uberEatsClone.png";
 import redditClone from "/assets/projects/redditClone.png";
+import tiktik from "/assets/projects/tiktik.png";
 
 const Works = () => {
   return (
@@ -166,6 +167,37 @@ const Works = () => {
                     width={1620}
                     height={1240}
                     alt="reddit clone"
+                  />
+                </WorkRight>
+              </WorkContainer>
+            );
+          }}
+        ></Tile>
+        <Tile
+          page={5}
+          renderContent={({ progress }) => {
+            return (
+              <WorkContainer>
+                <WorkLeft progress={progress}>
+                  <div>I built</div>
+                  <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                    <WorkLink href="https://short-video-social-media-app.vercel.app/">
+                      TikTik
+                    </WorkLink>
+                  </div>
+                  <div className="text-2xl md:text-3xl font-semibold tracking-tight pt-5">
+                    <WorkLink href="https://github.com/Rin9/short_video_social_media_app">
+                      Github
+                    </WorkLink>
+                  </div>
+                </WorkLeft>
+                <WorkRight progress={progress}>
+                  <Image
+                    src={tiktik}
+                    layout="responsive"
+                    width={1620}
+                    height={1240}
+                    alt="TikTik"
                   />
                 </WorkRight>
               </WorkContainer>
