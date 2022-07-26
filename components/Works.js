@@ -17,7 +17,7 @@ import tiktik from "/assets/projects/tiktik.png";
 
 const Works = () => {
   return (
-    <TileWrapper numOfPages={5}>
+    <TileWrapper numOfPages={6}>
       <TileBackground>
         <WorkBackground></WorkBackground>
       </TileBackground>
