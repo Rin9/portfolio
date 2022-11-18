@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 export const WorkContainer = ({ children }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen px-5">
       {children}
     </div>
   );

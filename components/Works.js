@@ -18,6 +18,8 @@ import welcomehomes from '/assets/projects/welcomehome.png';
 import fittime from '/assets/projects/fittime.png';
 import distanceEducation from '/assets/projects/de.png';
 
+const TechStack = () => {};
+
 const Works = ({ type }) => {
   if (type === 'work') {
     return (
@@ -28,7 +30,6 @@ const Works = ({ type }) => {
 
         {/* work projects */}
 
-        {/* personal projects */}
         <TileContent>
           <Tile
             page={0}
@@ -40,6 +41,12 @@ const Works = ({ type }) => {
                     <WorkLink href="https://welcomehomes.com/">
                       Welcome Home
                     </WorkLink>
+                  </div>
+                  <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                    Welcome Building Corporation makes it easy for home buyers
+                    to build a newly constructed home without having to deal
+                    with delays and headaches of coordinating with contractors,
+                    architects, and other parties.
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
@@ -62,6 +69,10 @@ const Works = ({ type }) => {
                   <div>Net Star</div>
                   <div className="text-4xl md:text-5xl font-semibold tracking-tight">
                     <WorkLink href="http://www.fit-time.com">Fit Time</WorkLink>
+                  </div>
+                  <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                    An online personal training and fitness platform that
+                    seamlessly connects fitness professionals and their clients.
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
@@ -88,6 +99,11 @@ const Works = ({ type }) => {
                         Continuous Education
                       </WorkLink>
                     </div>
+                    <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                      Help graduated people for decades or elderly all around
+                      China to keep learning new skills with online video
+                      classes and tests.
+                    </div>
                   </WorkLeft>
                   <WorkRight progress={progress}>
                     <Image
@@ -108,12 +124,10 @@ const Works = ({ type }) => {
   }
   if (type === 'personal') {
     return (
-      <TileWrapper numOfPages={6}>
+      <TileWrapper numOfPages={5}>
         <TileBackground>
           <WorkBackground></WorkBackground>
         </TileBackground>
-
-        {/* work projects */}
 
         {/* personal projects */}
         <TileContent>
@@ -132,6 +146,10 @@ const Works = ({ type }) => {
                     <WorkLink href="https://github.com/Rin9/better_buy">
                       Github
                     </WorkLink>
+                  </div>
+                  <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                    A React-based E-commerce Web App. Fully responsive, powered
+                    by Stripe API.
                   </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
@@ -162,6 +180,10 @@ const Works = ({ type }) => {
                       Github
                     </WorkLink>
                   </div>
+                  <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                    A simple blog build with Next.js & GraphCMS & Chakra UI.
+                    Design by ME.
+                  </div>
                 </WorkLeft>
                 <WorkRight progress={progress}>
                   <Image
@@ -191,6 +213,10 @@ const Works = ({ type }) => {
                       <WorkLink href="https://github.com/Rin9/new_fashion">
                         Github
                       </WorkLink>
+                    </div>
+                    <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                      A fully functional fashion e-commerce website. Inspired by
+                      a fashion brand I love based in NYC.
                     </div>
                   </WorkLeft>
                   <WorkRight progress={progress}>
@@ -223,6 +249,10 @@ const Works = ({ type }) => {
                         Github
                       </WorkLink>
                     </div>
+                    <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                      Just as name shown, the Uber Eats clone but better with
+                      fully responsive design.
+                    </div>
                   </WorkLeft>
                   <WorkRight progress={progress}>
                     <Image
@@ -245,37 +275,6 @@ const Works = ({ type }) => {
                   <WorkLeft progress={progress}>
                     <div>I built</div>
                     <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                      <WorkLink href="https://reddit-clone-phi-orcin.vercel.app/">
-                        Reddit Clone
-                      </WorkLink>
-                    </div>
-                    <div className="text-2xl md:text-3xl font-semibold tracking-tight pt-5">
-                      <WorkLink href="https://github.com/Rin9/reddit_clone">
-                        Github
-                      </WorkLink>
-                    </div>
-                  </WorkLeft>
-                  <WorkRight progress={progress}>
-                    <Image
-                      src={redditClone}
-                      layout="responsive"
-                      width={1620}
-                      height={1240}
-                      alt="reddit clone"
-                    />
-                  </WorkRight>
-                </WorkContainer>
-              );
-            }}
-          ></Tile>
-          <Tile
-            page={5}
-            renderContent={({ progress }) => {
-              return (
-                <WorkContainer>
-                  <WorkLeft progress={progress}>
-                    <div>I built</div>
-                    <div className="text-4xl md:text-5xl font-semibold tracking-tight">
                       <WorkLink href="https://short-video-social-media-app.vercel.app/">
                         TikTik
                       </WorkLink>
@@ -284,6 +283,10 @@ const Works = ({ type }) => {
                       <WorkLink href="https://github.com/Rin9/short_video_social_media_app">
                         Github
                       </WorkLink>
+                    </div>
+                    <div className="mt-10 text-xl md:text-2xl font-semibold tracking-tight">
+                      A short video sharing platform. Powered by Sanity with
+                      google login services.
                     </div>
                   </WorkLeft>
                   <WorkRight progress={progress}>
