@@ -1,6 +1,6 @@
-import React, { useContext, useRef } from "react";
-import s from "../styles/skills.module.css";
-import { ScrollContext } from "../utils/scroll-observer";
+import React, { useContext, useRef } from 'react';
+import s from '../styles/skills.module.css';
+import { ScrollContext } from '../utils/scroll-observer';
 
 const opacityForBlock = (sectionProgress, blockNo) => {
   const progress = sectionProgress - blockNo;
@@ -21,7 +21,7 @@ const Skills = () => {
     const percentY =
       Math.min(
         clientHeight + halfH,
-        Math.max(-screenH, scrollY - offsetTop) + halfH
+        Math.max(-screenH, scrollY - offsetTop) + halfH,
       ) / clientHeight;
     progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
   }
@@ -36,7 +36,7 @@ const Skills = () => {
               opacity: opacityForBlock(progress, 0),
             }}
           >
-            I&apos;m a self-taught front-end developer.
+            I&apos;m a self-taught software engineer.
           </div>
           <span
             className={`${s.skillText} inline-block after:content-["_"]`}
