@@ -16,9 +16,6 @@ export default function Home() {
       </Head>
       <Hero />
       <Skills />
-      <Projects type={''} />
-      <Works type={'work'} />
-      <Projects type={'personal'} />
       <Works type={'personal'} />
       <Trustedby />
       <Footer />
